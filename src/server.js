@@ -21,6 +21,7 @@ mongoose.connect('mongodb+srv://krishanwalia:krishanwalia@cluster0.c073ygb.mongo
         response = { message: 'API is working ' };
         res.json(response);
     });
+    
     const noteRouter = require('./routes/Note');
     app.use('/notes', noteRouter);
 

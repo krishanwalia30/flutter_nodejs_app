@@ -26,7 +26,7 @@ router.post('/add', async function (req, res) {
     const response = { message: "New Note Created for " + `id: ${req.body.userid}` };
     res.json(response);
 
-    res.json(req.body);
+    // res.json(req.body);
 });
 
 router.post('/delete', async function (req, res) {
